@@ -36,5 +36,10 @@ ensure_dir "$WS_INCLUDE/roles"
 echo "Copying roles/server_endpoint.hpp → $WS_INCLUDE/roles/server_endpoint.hpp"
 cp "$MIRROR_DIR/roles/server_endpoint.hpp" "$WS_INCLUDE/roles/server_endpoint.hpp"
 
+# 4) transport/asio/connection.hpp
+ensure_dir "$WS_INCLUDE/transport/asio"
+echo "Copying transport/asio/connection.hpp → $WS_INCLUDE/transport/asio/connection.hpp"
+cp "$MIRROR_DIR/transport/asio/connection.hpp" "$WS_INCLUDE/transport/asio/connection.hpp"
+
 echo "Done."
 
