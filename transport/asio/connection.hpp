@@ -55,7 +55,7 @@ namespace websocketpp {
 namespace transport {
 namespace asio {
 
-typedef lib::function<void -- patched(connection_hdl)> tcp_init_handler;
+typedef lib::function<void(connection_hdl)> tcp_init_handler;
 
 /// Asio based connection transport component
 /**
