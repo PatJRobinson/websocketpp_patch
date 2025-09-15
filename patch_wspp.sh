@@ -2,13 +2,13 @@
 set -euo pipefail
 
 # Usage: patch_wspp.sh /path/to/websocketpp/include /path/to/mirror
-if [ "$#" -ne 1 ]; then
-  echo "Usage: $0 <wspp-include-dir>"
+if [ "$#" -ne 2 ]; then
+  echo "Usage: $0 <patch-dir> <wspp-include-dir>" 
   exit 1
 fi
 
-WS_INCLUDE="$1"
-MIRROR_DIR="."
+MIRROR_DIR="$1"
+WS_INCLUDE="$2"
 
 # Helper to ensure target subdir exists
 ensure_dir() {
