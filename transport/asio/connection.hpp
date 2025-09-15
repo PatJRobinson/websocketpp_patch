@@ -319,7 +319,7 @@ public:
             new lib::asio::steady_timer(
               m_io_service->get_executor(), 
               std::chrono::milliseconds(duration)
-            );
+            )
             // patched out:
             //new lib::asio::steady_timer(
             //    *m_io_service,
